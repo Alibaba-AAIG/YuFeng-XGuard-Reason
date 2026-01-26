@@ -17,7 +17,7 @@ Built on the **Qwen3** architecture, the models are deeply optimized for online 
 
 YuFeng-XGuard-Reason has been benchmarked against mainstream guardrail models across many content safety datasets. For more detailed data, please refer to our [technical report](https://arxiv.org/pdf/2601.15588).
 
-<img src="./topk.png" alt="top performance" width="1100"/>
+<img src="./img/topk.png" alt="top performance" width="1100"/>
 
 ---
 
