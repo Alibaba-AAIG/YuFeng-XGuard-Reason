@@ -1,10 +1,26 @@
+<p align="center">
+  <img src="./img/xguard_banner.png" alt="Xguard Banner" width=100%/>
+</p>
 
-# YuFeng-XGuard-Reason
+<p><br></p>
+
+<div align="center">
+  <h1 style="margin: 0;">YuFeng-XGuard: A Reasoning-Centric, Interpretable, and Flexible Guardrail Model for Large Language Models</h1>
+</div>
+
+<p align="center">
+        &nbsp&nbsp🤗 <a href="https://huggingface.co/Alibaba-AAIG/YuFeng-XGuard-Reason-8B">HuggingFace</a>&nbsp&nbsp | 
+        &nbsp&nbsp🤖 <a href="https://modelscope.cn/models/Alibaba-AAIG/YuFeng-XGuard-Reason-8B">ModelScope</a>&nbsp&nbsp |
+        &nbsp&nbsp📄 <a href="https://arxiv.org/abs/2601.15588">Paper</a>&nbsp&nbsp
+</p>
+
+---
+
+## 🐬 Introduction
 
 **YuFeng-XGuard-Reason** is a series of guardrail models specifically designed for content safety. It is engineered to accurately identify security risks in user requests, model responses, and general text, while providing configurable risk attribution information.
 
 Built on the **Qwen3** architecture, the models are deeply optimized for online real-time interaction scenarios, balancing inference latency, recognition precision, and policy extensibility. To maximize explainability while minimizing generation overhead, the model adopts a two-stage output paradigm: it prioritizes outputting structured risk conclusions, followed by detailed risk explanations as needed. Currently, the models have achieved State-of-the-Art performance across multiple content safety benchmarks, including multilingual risk identification, attack instruction defense, and safety completion.
-
 
 ### Key Features
 
@@ -19,10 +35,9 @@ YuFeng-XGuard-Reason has been benchmarked against mainstream guardrail models ac
 
 <img src="./img/topk.png" alt="top performance" width="1100"/>
 
----
+<p><br></p>
 
-
-## Quick Start
+## 🚀 Quick Start
 
 **Loading the Model**
 
@@ -89,7 +104,6 @@ def infer(model, tokenizer, messages, policy=None, max_new_tokens=1, reason_firs
 tokenizer = AutoTokenizer.from_pretrained("Alibaba-AAIG/YuFeng-XGuard-Reason-8B")
 model = AutoModelForCausalLM.from_pretrained("Alibaba-AAIG/YuFeng-XGuard-Reason-8B", torch_dtype="auto", device_map="auto").eval()
 ```
-
 
 **Basic Inference and Result Parsing**
 
@@ -229,9 +243,9 @@ print(result['token_score'])
 '''
 ```
 
----
+<p><br></p>
 
-## Risk Definitions
+## ⚡️ Risk Definitions
 
 The built-in system risk categories are as follows. For a detailed explanation of the dimensions in this risk framework, please refer to [S-Eval](https://huggingface.co/datasets/IS2Lab/S-Eval):
 
@@ -267,30 +281,38 @@ The built-in system risk categories are as follows. For a detailed explanation o
 | ma | Risks Involving Minors | Minor Abuse and Exploitation |
 | md | Risks Involving Minors | Minor Delinquency |
 
----
+<p><br></p>
 
-## Citation
+## 📚 Citation
 
 ```bibtex
-@misc{lin2026yufengxguardreasoningcentricinterpretableflexible,
-      title={YuFeng-XGuard: A Reasoning-Centric, Interpretable, and Flexible Guardrail Model for Large Language Models}, 
-      author={Junyu Lin and Meizhen Liu and Xiufeng Huang and Jinfeng Li and Haiwen Hong and Xiaohan Yuan and Yuefeng Chen and Longtao Huang and Hui Xue and Ranjie Duan and Zhikai Chen and Yuchuan Fu and Defeng Li and Lingyao Gao and Yitong Yang},
-      year={2026},
-      eprint={2601.15588},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2601.15588}, 
+@article{lin2026yufengxguard,
+  title={YuFeng-XGuard: A Reasoning-Centric, Interpretable, and Flexible Guardrail Model for Large Language Models},
+  author={Lin, Junyu and Liu, Meizhen and Huang, Xiufeng and Li, Jinfeng and Hong, Haiwen and Yuan, Xiaohan and Chen, Yuefeng and Huang, Longtao and Xue, Hui and Duan, Ranjie and Chen, Zhikai and Fu, Yuchuan and Li, Defeng and Gao, Linyao and Yang Yitong},
+  journal={arXiv preprint arXiv:2601.15588},
+  year={2026}
 }
 ```
 
----
+<p><br></p>
 
-## Disclaimer
+## ⚠️ Disclaimer
 
 This model is intended only as an auxiliary tool for content safety identification and risk governance. Due to model limitations, false positives or false negatives may occur. Users should perform thorough automated evaluations, canary testing, and real-time online monitoring tailored to their specific business scenarios. Users assume full responsibility for the final behavior and compliance of downstream systems. This project is not liable for any direct or indirect losses resulting from the use of this model or its outputs.
 
----
+<p><br></p>
 
-## License
+## 📄 License
 
 This project is licensed under the Apache-2.0 License.
+
+<p><br></p>
+
+## Hi there 👋 这里是Alibaba AAIG  🌊
+
+Al是文明的陆地，承载生产力与创造力；AI安全是环绕的海洋，既塑造边界，也孕育信任与风险。我们致力于打造具备自净化、自适应、自修复能力的安全生态，为智能技术的可持续发展护航。
+> 🌊 在我们的安全生态中，每个技术模块以海洋生物命名，它们背后，有着不同的故事⋯⋯
+
+ <p align="center">
+  <img src="./img/aaig.jpg" alt="AAIG" width="800"/>
+</p>
