@@ -9,8 +9,9 @@
 </div>
 
 <p align="center">
-        &nbsp&nbsp🤗 <a href="https://huggingface.co/Alibaba-AAIG/YuFeng-XGuard-Reason-8B">HuggingFace</a>&nbsp&nbsp | 
-        &nbsp&nbsp🤖 <a href="https://modelscope.cn/models/Alibaba-AAIG/YuFeng-XGuard-Reason-8B">ModelScope</a>&nbsp&nbsp |
+        &nbsp&nbsp🤗 <a href="https://huggingface.co/collections/Alibaba-AAIG/yufeng-xguard-reason">HuggingFace</a>&nbsp&nbsp | 
+        &nbsp&nbsp🤖 <a href="https://modelscope.cn/collections/Alibaba-AAIG/YuFeng-XGuard-Reason">ModelScope</a>&nbsp&nbsp |
+        &nbsp&nbsp🎬 <a href="https://modelscope.cn/studios/Alibaba-AAIG/YuFeng-XGuard-Reason-Demo/summary">Demo</a>&nbsp&nbsp |
         &nbsp&nbsp📄 <a href="https://arxiv.org/abs/2601.15588">Paper</a>&nbsp&nbsp
 </p>
 
